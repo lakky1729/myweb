@@ -1,5 +1,7 @@
 pipeline{
     agent any
+    tools{ maven "maven-latest"
+    }
     
     environment{
         PATH = "/opt/maven3/bin:$PATH"
